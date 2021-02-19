@@ -1,0 +1,44 @@
+
+    <div id="internalDiv">
+        <form class="topForm"><span style="font-size: 40px;font-weight: bold;">My cards</span><span>Here are your linked credit cards and bank account. You can chose your favorite simply clicking on one of them below. Or you can add a new one with the dedicated form</span>
+            <div>
+                <div class="card-group" id="cards" style="margin-top: 17px;display: inline-flex;">
+                    <div class="card">
+                        <div class="card-body" style="background-color: gray;">
+                            <div style="text-align: center;"><img src="assets/img/visa.jpg" style="width: 100px;border-radius: 3px;"></div>
+                            <h4 class="card-title">Visa</h4>
+                            <p>Predefinito</p><button class="btn btn-primary" type="button" style="width: 100%;margin-bottom: 20px;">Delete</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div style="text-align: center;"><img src="assets/img/credit.jpg" style="width: 100px;border-radius: 3px;"></div>
+                            <h4 class="card-title">EasyPay Credit</h4>
+                            <p>Andrea Vaiuso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form class="newCardForm"><span style="font-size: 40px;font-weight: bold;">Add card</span>
+            <div style="text-align: center; margin-bottom: 20px">
+                <img id="cardIcon" src="assets/img/card_generic.png" style="width: 90px;border-radius: 3px;">
+            </div>
+            <div style="text-align: center; width: 100%">
+                <span id="cardlabel" style="margin-bottom: 10px">Card</span>
+            </div>
+            <input class="form-control" type="text" id="cardHolderForm" placeholder="Holder">
+            <input class="form-control" type="text" id="cardNumbForm" placeholder="Card Number">
+            <input class="form-control" type="text" maxlength=5  id="exDateForm" placeholder="Expiration date">
+            <input class="form-control" type="text" id="secureCodeForm" placeholder="Secure code">
+            <input class="form-control" type="text" id="addressForm" placeholder="Address">
+            <button class="btn btn-primary" id="linkCardBtn" type="button" style="width: 100%;">Link it</button>
+            </form>
+        <form class="newBankForm">
+            <span style="font-size: 40px;font-weight: bold;">Add bank account</span>
+            <input class="form-control" type="text" id="holderForm" placeholder="Holder">
+            <input class="form-control" type="text" id="ibanForm" placeholder="Iban Code">
+            <button
+                class="btn btn-primary" id="linkIbanBtn" type="button" style="width: 100%;">Link it</button>
+        </form>
+    </div>
+    

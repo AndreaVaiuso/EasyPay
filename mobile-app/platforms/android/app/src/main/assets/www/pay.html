@@ -1,0 +1,23 @@
+
+    <div id="internalDiv">
+        <form class="payForm"><span style="font-size: 40px;font-weight: bold;">Send money</span>
+            <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="paymentMethodDropdown" type="button" style="margin-top: 23px;width: 100%;">Preferred payment method selected</button>
+                <div class="dropdown-menu" id="paymentDropdownMenu" role="menu">
+                </div>
+            </div>
+            <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="paymentTypeDropdown" type="button" style="width: 100%;margin-top: 13px;">Person</button>
+                <div class="dropdown-menu" id="paymentTypeDropdownMenu" role="menu">
+                    <a class="dropdown-item" role="presentation" onclick="setPaymentType(0)">Person</a>
+                    <a class="dropdown-item" role="presentation" onclick="setPaymentType(1)">Business</a>
+                </div>
+            </div><input class="form-control" type="text" id="emailForm" placeholder="Email of beneficiary"><textarea class="form-control" id="causalForm" placeholder="Causal"></textarea>
+            <span
+                style="margin-top: 13px;">Import:</span><input class="form-control" type="text" id="moneyInput"  placeholder="0,00 €">
+                <button
+                    class="btn btn-primary" id="sendPaymentBtn" type="button" style="margin-top: 29px;min-width: 0;width: 100%;">Send payment</button>
+        </form>
+    </div>
+
+
+
+

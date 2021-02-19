@@ -1,0 +1,8 @@
+{
+    "serverAddress" : "127.0.0.1",
+    "port" : "8001",
+    "TWILIO_ACCOUNT_SID" : "ACda3c8e7e7287f39ef1da58c72ec60a4c",
+	"TWILIO_AUTH_TOKEN" : "b82810996b9f763c3ea41661495b8a76",
+	"TWILIO_MESSAGING_NUMBER" : "",
+	"TWILIO_MESSAGING_WHATSAPP_NUMBER" : ""
+}

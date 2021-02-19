@@ -1,0 +1,275 @@
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.btn {
+  color: #fff;
+  background-color: #158972;
+  border-color: #39b14f;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #04cc00;
+  border-color: #0d856d;
+}
+
+#moneyInput {
+  margin-top: 9px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .homeForm {
+    width: 80%;
+    max-width: 800px;
+    display: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .payForm {
+    width: 460px;
+  }
+}
+
+.AlertTitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.AlertText {
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.NotificationToast {
+  background-color: #eaeaea;
+  margin-top: 10px;
+  padding-bottom: 14px;
+  border-left: 5px solid #158972;
+}
+
+.NotificationTitle {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 90%;
+  padding-top: 10px;
+}
+
+.NotificationText {
+  margin-left: 20px;
+  width: 90%;
+}
+
+.Notification {
+  border-left: 3px;
+}
+
+@media (min-width: 768px) {
+  .cardForm {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .newCardForm {
+    width: 80%;
+  }
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .newBankForm {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .topForm {
+    width: 80%;
+  }
+}
+
+#alertScreen {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+.windowForm {
+  margin-top: 100px;
+  position: relative;
+  left: -50%;
+  z-index: 20000;
+}
+
+@media (max-width: 768px) {
+  .windowForm {
+    margin-top: 0px;
+  }
+}
+
+#choseScreen {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+.notificationBar {
+  margin-top: 0px;
+  position: relative;
+  left: -50%;
+  z-index: 1000;
+}
+
+#notificationDiv {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .notificationBar {
+    width: 550px;
+  }
+}
+
+.NavbarLogo {
+  width: 40px;
+  height: 40px;
+  filter: brightness(138%) contrast(146%);
+  margin-right: 10px;
+}
+
+#codeDiv {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#dateInput {
+  margin-top: 10px;
+}
+
+.form-check-label {
+}
+
+.form-check {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #headImage {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #loginForm {
+    width: 446px;
+  }
+}
+
+#contentDiv {
+  padding-top: 130px
+}
+
+#loginForm {
+  
+}
+
+#registerForm {
+  
+}
+
+.modal2{
+  position: fixed;
+top: 0;
+left: 0;
+z-index: 1050;
+display: none;
+width: 100%;
+height: 100%;
+outline: 0;
+}
+

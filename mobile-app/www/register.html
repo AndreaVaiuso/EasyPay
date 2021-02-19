@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>web-app</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="ajaxLoader" class="modal" style="top: 50%;text-align: center;"><img src="assets/img/loader.gif" style="width: 119px;filter: hue-rotate(262deg);"></div>
+    <div id="choseScreen" class="AlertForm">
+        <form class="windowForm" style="padding-bottom: 80px;">
+            <div style="text-align: center;"><img id="choseIcon"></div><span id="choseTitle" class="AlertTitle">Title of message</span><span id="choseText" class="AlertText">This is an example of alert text on form that appear over all page. Click the button to close alert form, thanks</span>
+            <button
+                class="btn btn-primary" id="yesBtn" type="button" style="width: 45%;float: left;margin-top: 20px;">Yes</button><button class="btn btn-primary" id="noBtn" type="button" style="width: 45%;float: right;margin-top: 20px;">No</button></form>
+    </div>
+    <div id="alertScreen" class="AlertForm">
+        <form class="windowForm">
+            <div style="text-align: center;"><img id="alertIcon"></div><span id="alertTitle" class="AlertTitle">Title of message</span><span id="alertText" class="AlertText">This is an example of alert text on form that appear over all page. Click the button to close alert form, thanks</span>
+            <button
+                class="btn btn-primary" id="okBtn" type="button" style="width: 100%;margin-top: 20px;">Understood</button>
+        </form>
+    </div>
+    <div id="contentDiv">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><img class="NavbarLogo" src="assets/img/logo3.png"><a class="navbar-brand text-light" href="#">EasyPay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" data-bs-hover-animate="pulse" id="goToLoginLink" href="index.html">Login</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    <form id="registerForm">
+        <div class="imgContainer"><img style="margin: auto;width: 126px;" src="assets/img/logoUp1.png"></div><span class="txt1" style="text-align: center;margin-bottom: 10px;">Super quick, super easy</span>
+        <input style="text-align: left" class="form-control" type="email" id="emailForm" placeholder="Email"
+            inputmode="email">
+            <span id="strength"></span>
+            <input class="form-control" type="password" id="passwordForm" placeholder="Password">
+            <input class="form-control" type="password" id="rPasswordForm" placeholder="Repeat Password">
+            <input class="form-control" type="text" id="fNameForm" style="margin-top: 44px;" placeholder="First Name">
+            <input class="form-control" type="text" id="lNameForm" placeholder="Last Name">
+            <input class="form-control" type="text" id="addressForm" placeholder="Address">
+            <input class="form-control" type="text" id="phoneForm" placeholder="Phone Number (with your prefix)" inputmode="tel">
+        <div style="margin-top: 38px;"><button class="btn btn-primary" id="createAccountBtn" type="button" style="margin-top: 20px;display: block;margin: auto;width: 100%;">Create Account</button></div>
+    </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/models.js"></script>
+    <script src="assets/js/SHA256.js"></script>
+    <script src="assets/js/staticFunc.js"></script>
+    <script src="assets/js/control/registerControl.js"></script>
+</body>
+
+</html>

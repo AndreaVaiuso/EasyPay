@@ -1,0 +1,26 @@
+
+    <div id="internalDiv">
+        <form class="payForm"><span style="font-size: 40px;font-weight: bold;">Periodic pay</span>
+            <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="paymentMethodDropdown" type="button" style="margin-top: 23px;width: 100%;">Preferred payment method selected</button>
+                <div class="dropdown-menu" id ="paymentDropdownMenu" role="menu">
+                </div>
+            </div>
+            <input class="form-control" type="text" id="businessForm" placeholder="Name of business">
+            <textarea class="form-control" id="causalForm" placeholder="Causal"></textarea>
+            <div class="dropdown">
+                <button id="periodicityDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="periodDropdown" type="button" style="width: 100%;">Weekly</button>
+                <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" role="presentation" onclick="setPeriodicity(0)">Weekly</a>
+                    <a class="dropdown-item" role="presentation" onclick="setPeriodicity(1)">Monthly</a>
+                    <a class="dropdown-item" role="presentation" onclick="setPeriodicity(2)">Yearly</a>
+                </div>
+    </div>
+    <span style="margin-top: 10px;">Starting from:</span>
+    <input class="form-control" id="dateInput" type="date">
+    <span style="margin-top: 10px;">Limit:</span>
+    <input id="limitForm" class="form-control" type="text" placeholder="Leave empty for no specified limit" style="margin-top: 10px;">
+    <span
+        style="margin-top: 13px;">Import:</span><input class="form-control" type="text" id="moneyInput" placeholder="0,00 €"><button class="btn btn-primary"
+            id="sendPaymentBtn" type="button" style="margin-top: 29px;min-width: 0;width: 100%;">Send payment</button></form>
+        </div>
+        

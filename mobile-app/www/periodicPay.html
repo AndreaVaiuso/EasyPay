@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>web-app</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-image: none;">
+    <div id="ajaxLoader" class="modal" style="top: 50%;text-align: center;"><img src="assets/img/loader.gif"
+            style="width: 119px;filter: hue-rotate(262deg);"></div>
+    <div id="alertScreen" class="modal2">
+        <form class="windowForm">
+            <div style="text-align: center;"><img id="alertIcon"></div><span id="alertTitle" class="AlertTitle">Title of
+                message</span><span id="alertText" class="AlertText">This is an example of alert text on form that
+                appear over all page. Click the button to close alert form, thanks</span>
+            <button class="btn btn-primary" id="okBtn" type="button"
+                style="width: 100%;margin-top: 20px;">Understood</button>
+        </form>
+    </div>
+    <div id="choseScreen" class="modal2">
+        <form class="windowForm" style="padding-bottom: 80px;">
+            <div style="text-align: center;"><img id="choseIcon"></div><span id="choseTitle" class="AlertTitle">Title of
+                message</span><span id="choseText" class="AlertText">This is an example of alert text on form that
+                appear over all page. Click the button to close alert form, thanks</span>
+            <button class="btn btn-primary" id="yesBtn" type="button"
+                style="width: 45%;float: left;margin-top: 20px;">Yes</button><button class="btn btn-primary" id="noBtn"
+                type="button" style="width: 45%;float: right;margin-top: 20px;">No</button>
+        </form>
+    </div>
+    <!-- 
+    <div id="notificationDiv" class="modal2">
+        <form class="notificationBar">
+            <div style="text-align: right;"><img id="closeNotifBtn" class="closeNotifBtn"
+                    style="width: 25px;height: 25px;" src="assets/img/close.png"></div><span
+                style="font-size: 40px;font-weight: bold;text-align: center;padding-top: 10px;">Notifications</span>
+            <div id="notificationContainer">
+                <div class="Notification">
+                    <div class="NotificationToast">
+                        <div style="display: inline;"><span class="NotificationTitle">Paride Piscitello accepted your
+                                payment</span><span class="NotificationText">20,00€ reedem code is no longer
+                                available</span></div>
+                    </div><button class="btn btn-primary" type="button"
+                        style="border-radius: 0px;width: 100%;">Delete</button>
+                </div>
+                <div class="Notification">
+                    <div class="NotificationToast">
+                        <div style="display: inline;"><span class="NotificationTitle">Payment recieved from Andrea
+                                Vaiuso</span><span class="NotificationText">Amount: 25,55€</span></div>
+                    </div><button class="btn btn-primary" type="button"
+                        style="border-radius: 0px;width: 100%;">Delete</button>
+                </div>
+                <div class="Notification">
+                    <div class="NotificationToast">
+                        <div style="display: inline;"><span class="NotificationTitle">Payment request from Andrea
+                                Vaiuso</span><span class="NotificationText">Amount: 50,00€</span></div>
+                    </div><button class="btn btn-primary" id="payBtn" type="button"
+                        style="border-radius: 0px;width: 100%;">Pay</button>
+                </div>
+                <div class="Notification">
+                    <div class="NotificationToast">
+                        <div style="display: inline;"><span class="NotificationTitle">On 3 May Netflix will take it's
+                                payment</span><span class="NotificationText">Amount: 9,99€</span></div>
+                    </div><button class="btn btn-primary" type="button"
+                        style="border-radius: 0px;width: 100%;">Delete</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    -->
+    <div id="contentDiv">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><img class="NavbarLogo" src="assets/img/logo3.png"><a id="topLogo" class="navbar-brand text-light"
+                    href="#">EasyPay</a><button data-toggle="collapse" class="navbar-toggler"
+                    data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <!--
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light"
+                        
+                                data-bs-hover-animate="pulse" id="notificationBtn" href="#">Notifications</a></li>-->
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light"
+                                data-bs-hover-animate="pulse" id="periodicPaymentBtn" href="#">Periodic payments</a>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light"
+                                data-bs-hover-animate="pulse" id="askForMoneyBtn" href="#">Ask for money</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light"
+                                data-bs-hover-animate="pulse" id="sendMoneyBtn" href="#">Send Money</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                    </ul><button class="btn btn-outline-light" id="logoutBtn" type="button">Logout</button>
+                </div>
+            </div>
+        </nav>
+        <div id="internalDiv">
+            <form class="payForm"><span style="font-size: 40px;font-weight: bold;">Periodic pay</span>
+                <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="paymentMethodDropdown" type="button" style="margin-top: 23px;width: 100%;">Preferred payment method selected</button>
+                    <div class="dropdown-menu" id ="paymentDropdownMenu" role="menu">
+                    </div>
+                </div>
+                <input class="form-control" type="text" id="businessForm" placeholder="Name of business">
+                <textarea class="form-control" id="causalForm" placeholder="Causal"></textarea>
+                <div class="dropdown">
+                    <button id="periodicityDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="periodDropdown" type="button" style="width: 100%;">Weekly</button>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" onclick="setPeriodicity(0)">Weekly</a>
+                        <a class="dropdown-item" role="presentation" onclick="setPeriodicity(1)">Monthly</a>
+                        <a class="dropdown-item" role="presentation" onclick="setPeriodicity(2)">Yearly</a>
+                    </div>
+        </div>
+        <span style="margin-top: 10px;">Starting from:</span>
+        <input class="form-control" id="dateInput" type="date">
+        <span style="margin-top: 10px;">Limit:</span>
+        <input id="limitForm" class="form-control" type="text" placeholder="Leave empty for no specified limit" style="margin-top: 10px;">
+        <span
+            style="margin-top: 13px;">Import:</span><input class="form-control" type="text" id="moneyInput" placeholder="0,00 €"><button class="btn btn-primary"
+                id="sendPaymentBtn" type="button" style="margin-top: 29px;min-width: 0;width: 100%;">Send payment</button></form>
+            </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/models.js"></script>
+    <script src="assets/js/SHA256.js"></script>
+    <script src="assets/js/staticFunc.js"></script>
+    <script src="assets/js/control/wrapperControl.js"></script>
+
+    <script src="assets/js/control/periodicPaymentControl.js"></script>
+
+    
+</body>
+
+</html>
+    
+        

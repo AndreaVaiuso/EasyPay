@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>web-app</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="ajaxLoader" class="modal" style="top: 50%;text-align: center;"><img src="assets/img/loader.gif" style="width: 119px;filter: hue-rotate(262deg);"></div>
+    <div id="choseScreen" class="modal2">
+        <form class="windowForm" style="padding-bottom: 80px;">
+            <div style="text-align: center;"><img id="choseIcon"></div><span id="choseTitle" class="AlertTitle">Title of message</span><span id="choseText" class="AlertText">This is an example of alert text on form that appear over all page. Click the button to close alert form, thanks</span>
+            <button
+                class="btn btn-primary" id="yesBtn" type="button" style="width: 45%;float: left;margin-top: 20px;">Yes</button><button class="btn btn-primary" id="noBtn" type="button" style="width: 45%;float: right;margin-top: 20px;">No</button></form>
+    </div>
+    <div id="alertScreen" class="modal2">
+        <form class="windowForm">
+            <div style="text-align: center;"><img id="alertIcon"></div><span id="alertTitle" class="AlertTitle">Title of message</span><span id="alertText" class="AlertText">This is an example of alert text on form that appear over all page. Click the button to close alert form, thanks</span>
+            <button
+                class="btn btn-primary" id="okBtn" type="button" style="width: 100%;margin-top: 20px;">Understood</button>
+        </form>
+    </div>
+    <div id="contentDiv">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><img class="NavbarLogo" src="assets/img/logo3.png"><a class="navbar-brand text-light" id="homeBtn" href="#">EasyPay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" data-bs-hover-animate="pulse" id="newAccountBtn" href="register.html">Create account</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" data-bs-hover-animate="pulse" id="recoverBtn" href="#">Password recover</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    <form id="loginForm">
+        <img id="headImage" src="assets/img/1.jpg" style="margin-top: -19px;margin-left: -43px;width: 446px;">
+        <div class="imgContainer">
+            <img style="margin: auto;width: 126px;" src="assets/img/logoUp1.png">
+        </div>
+        <span class="txt1" style="text-align: center;margin-bottom: 28px;">Super quick, super easy</span>
+        <input class="form-control" type="email" id="emailForm" style="text-align: left" placeholder="Email" inputmode="email"><input class="form-control" type="password" id="passwordForm" style="margin-top: 10px;" placeholder="Password">
+        <div style="margin-top: 38px;"><button class="btn btn-primary" id="loginBtn" type="button" style="margin-top: 20px;display: block;margin: auto;width: 100%;">Login</button></div>
+    </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/models.js"></script>
+    <script src="assets/js/SHA256.js"></script>
+    <script src="assets/js/staticFunc.js"></script>
+    <script src="assets/js/control/loginControl.js"></script>
+</body>
+
+</html>
